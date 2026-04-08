@@ -32,24 +32,24 @@
 
 > 以某个具体人物的思维方式为核心蒸馏出的 skill。
 
-| Repo | ⭐ | 蒸馏对象 / Figure | 简介 / Description |
-|------|-----|-------------------|-------------------|
-| [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | 1.3k | 毛泽东 / Mao Zedong | 一条总原则 + 九大方法论工具：矛盾论、实践论、调查研究、群众路线…… |
-| [EveryInc/charlie-cfo-skill](https://github.com/EveryInc/charlie-cfo-skill) | 188 | 查理·芒格 / Charlie Munger | 自举式 CFO 财务管理：资本纪律、单位经济、现金管理 |
-| [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 10.7k | 任意真实人物 / Any Real Person | 从聊天记录、文档、截图中蒸馏一个真实的人 —— 数字生命 1.0 |
-| [uditgoenka/autoresearch](https://github.com/uditgoenka/autoresearch) | 3.4k | Andrej Karpathy | 受 Karpathy 启发的自主研究循环：修改 → 验证 → 保留/丢弃 → 永远重复 |
-| [haberlah/wardley-mapping](https://github.com/haberlah/wardley-mapping) | 2 | Simon Wardley | 交互式 Wardley Map 战略分析 |
+| Repo | 蒸馏对象 / Figure | 简介 / Description |
+|------|-------------------|-------------------|
+| [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) | 毛泽东 / Mao Zedong | 一条总原则 + 九大方法论工具：矛盾论、实践论、调查研究、群众路线…… |
+| [EveryInc/charlie-cfo-skill](https://github.com/EveryInc/charlie-cfo-skill) | 查理·芒格 / Charlie Munger | 自举式 CFO 财务管理：资本纪律、单位经济、现金管理 |
+| [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill) | 任意真实人物 / Any Real Person | 从聊天记录、文档、截图中蒸馏一个真实的人 —— 数字生命 1.0 |
+| [uditgoenka/autoresearch](https://github.com/uditgoenka/autoresearch) | Andrej Karpathy | 受 Karpathy 启发的自主研究循环：修改 → 验证 → 保留/丢弃 → 永远重复 |
+| [haberlah/wardley-mapping](https://github.com/haberlah/wardley-mapping) | Simon Wardley | 交互式 Wardley Map 战略分析 |
 
 ## 📚 书籍 / Books
 
 > 将某本经典著作的方法论提取为 skill。
 
-| Repo | ⭐ | 著作 / Book | 简介 / Description |
-|------|-----|------------|-------------------|
-| [slavingia/skills](https://github.com/slavingia/skills) | 7.4k | *The Minimalist Entrepreneur* | 每章 → 一个 slash command：/find-community, /validate-idea, /mvp… |
-| [obra/the-elements-of-style](https://github.com/obra/the-elements-of-style) | 330 | *The Elements of Style* (1918) | Strunk 的 18 条写作清规，用于文档和用户文案审校 |
-| [luoling8192/software-design-philosophy-skill](https://github.com/luoling8192/software-design-philosophy-skill) | 261 | *A Philosophy of Software Design* | John Ousterhout 的软件设计哲学 |
-| [ginobefun/deep-reading-analyst-skill](https://github.com/ginobefun/deep-reading-analyst-skill) | 301 | 多本经典 / Multiple Classics | 融合 Dalio《原则》、芒格思维模型、Musk 第一性原理的深度阅读分析 |
+| Repo | 著作 / Book | 简介 / Description |
+|------|------------|-------------------|
+| [slavingia/skills](https://github.com/slavingia/skills) | *The Minimalist Entrepreneur* | 每章 → 一个 slash command：/find-community, /validate-idea, /mvp… |
+| [obra/the-elements-of-style](https://github.com/obra/the-elements-of-style) | *The Elements of Style* (1918) | Strunk 的 18 条写作清规，用于文档和用户文案审校 |
+| [luoling8192/software-design-philosophy-skill](https://github.com/luoling8192/software-design-philosophy-skill) | *A Philosophy of Software Design* | John Ousterhout 的软件设计哲学 |
+| [ginobefun/deep-reading-analyst-skill](https://github.com/ginobefun/deep-reading-analyst-skill) | 多本经典 / Multiple Classics | 融合 Dalio《原则》、芒格思维模型、Musk 第一性原理的深度阅读分析 |
 
 ---
 
