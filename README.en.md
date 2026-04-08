@@ -68,16 +68,23 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 | [EveryInc/charlie-cfo-skill](https://github.com/EveryInc/charlie-cfo-skill) | Charlie Munger | Uses Charlie Munger as the cognitive anchor for a bootstrap CFO skill covering capital discipline, unit economics, and cash management. |
 | [alchaincyf/munger-skill](https://github.com/alchaincyf/munger-skill) | Charlie Munger | Distills Munger's multidisciplinary thinking, inversion, and anti-stupidity principles into a general business skill. |
 | [will2025btc/buffett-perspective](https://github.com/will2025btc/buffett-perspective) | Warren Buffett | Converts Buffett's long-termism, circle-of-competence logic, and capital allocation style into an investable judgment skill. |
+| [derrickgong87/duan-yongping-skill](https://github.com/derrickgong87/duan-yongping-skill) | Duan Yongping | Distills Duan Yongping's Chinese value-investing framework and long-term business judgment into a runnable thinking system. |
 | [alchaincyf/steve-jobs-skill](https://github.com/alchaincyf/steve-jobs-skill) | Steve Jobs | Distills Steve Jobs's cognitive operating system around product taste, ruthless focus, and persuasive storytelling. |
 | [alchaincyf/elon-musk-skill](https://github.com/alchaincyf/elon-musk-skill) | Elon Musk | Turns Musk's first-principles reasoning, engineering constraints, and cost focus into a high-intensity execution skill. |
 | [alchaincyf/zhang-yiming-skill](https://github.com/alchaincyf/zhang-yiming-skill) | Zhang Yiming | Captures Zhang Yiming's judgments around information distribution, organizational efficiency, and long-term business competitiveness. |
+| [alchaincyf/paul-graham-skill](https://github.com/alchaincyf/paul-graham-skill) | Paul Graham | Distills Paul Graham's startup, writing, and product judgment into a callable founder-mentor skill. |
+| [alchaincyf/naval-skill](https://github.com/alchaincyf/naval-skill) | Naval Ravikant | Turns Naval's frameworks for wealth, leverage, and life decisions into a cognitive operating system that spans business and philosophy. |
+| [AytuncYildizli/legends-mcp](https://github.com/AytuncYildizli/legends-mcp) | Elon Musk, Steve Jobs, Jeff Bezos, Warren Buffett, Charlie Munger, Paul Graham, Naval Ravikant | A multi-person bundle built around legendary founders and investors, enabling debate-style analysis directly inside Claude. |
 
 ### Technical Leaders
 
 | Repo | Name | Description |
 |------|------|-------------|
 | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Andrej Karpathy | Packages Karpathy's observations on LLM coding mistakes and workflow discipline into directly usable Claude Code principles. |
+| [alchaincyf/karpathy-skill](https://github.com/alchaincyf/karpathy-skill) | Andrej Karpathy | Distills Karpathy's own cognitive operating system into a runnable skill focused on model intuition, engineering simplification, and explanation quality. |
+| [alchaincyf/ilya-sutskever-skill](https://github.com/alchaincyf/ilya-sutskever-skill) | Ilya Sutskever | Extracts Ilya's thinking about scaling, research taste, and AI safety boundaries into a technical judgment skill. |
 | [rjs/shaping-skills](https://github.com/rjs/shaping-skills) | Ryan Singer | Breaks Ryan Singer's Shape Up / shaping methods into executable skills for framing problems and roughing out solution spaces. |
+| [Atypical-Consulting/claude-legends-review](https://github.com/Atypical-Consulting/claude-legends-review) | Elon Musk, Steve Jobs, Linus Torvalds | Centers code review on disagreement between three famous technical figures until their perspectives converge into a shared verdict. |
 
 ### Public Figures
 
@@ -85,6 +92,7 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 |------|------|-------------|
 | [alchaincyf/zhangxuefeng-skill](https://github.com/alchaincyf/zhangxuefeng-skill) | Zhang Xuefeng | Distills Zhang Xuefeng's realist frameworks for education choice, graduate exams, and career judgment into a callable consulting skill. |
 | [YixiaJack/luo-xiang-skill](https://github.com/YixiaJack/luo-xiang-skill) | Luo Xiang | Lets the AI analyze questions with Luo Xiang's legal reasoning and humanistic concern, emphasizing justice, boundaries, and institutions. |
+| [alchaincyf/mrbeast-skill](https://github.com/alchaincyf/mrbeast-skill) | MrBeast | Distills MrBeast's content-production system, hook strategy, and pacing logic into a creator-focused growth skill. |
 | [hotcoffeeshake/tong-jincheng-skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) | Tong Jincheng | Distills Tong Jincheng's relationship judgment and blunt interpersonal style into a people-reading skill. |
 | [Janlaywss/hu-chenfeng-skill](https://github.com/Janlaywss/hu-chenfeng-skill) | Hu Chenfeng | Uses Hu Chenfeng's consumer realism and life-choice perspective to analyze spending, settling down, and everyday decisions. |
 | [rottenpen/fengge-wangmingtianya-perspective](https://github.com/rottenpen/fengge-wangmingtianya-perspective) | Fengge Wangming Tianya | Distills Fengge Wangming Tianya's disillusioned realism and wandering-storytelling style into a Chinese persona skill. |
@@ -110,9 +118,9 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 ## 📏 Selection Criteria
 
 - **Real & Open**: Repositories must exist and be publicly accessible.
-- **Clear Origin**: Entries must clearly correspond to a **specific person**, a **specific book**, or a **specific brand**.
+- **Clear Origin**: Entries must clearly correspond to **one or more specific people**, a **specific book**, or a **specific brand**.
 - **Focus on Distillation**: The core value must be extracting frameworks and logic, not merely imitating tone or role-playing.
-- We do not include mixed-target lists (e.g., "Multiple Classics"), generic targets (e.g., "Any Real Person"), or broad skill packs that just borrow a name.
+- We do not include generic targets (e.g., "Any Real Person") or broad skill packs that merely borrow a name; however, tightly scoped multi-person bundles are allowed when they enumerate a recognizable set of notable figures.
 
 ## 🤝 Contributing
 
@@ -120,7 +128,7 @@ PRs are welcome. Please ensure:
 
 1. The repository is publicly accessible.
 2. It falls under one of the three categories: Figures, Books, or Brands.
-3. The name column contains **only the exact name** of the subject, without prefixes like "Inspired by" or generic labels.
+3. The name column contains **only exact names**; for multi-person bundles, list the most recognizable named figures explicitly.
 4. The description clearly states what specific content was distilled, based on the repository's own README.
 
 ## License
