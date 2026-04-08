@@ -12,8 +12,8 @@
 [![Chinese First](https://img.shields.io/badge/language-Chinese%20First-red?style=flat-square)](#)
 [![Curated Index](https://img.shields.io/badge/index-curated-blue?style=flat-square)](#)
 
-一个收录 **Claude Code / AI Coding Agents** 个性化 Skill 仓库的精选列表。
-A curated list of awesome personalized skill repositories for AI agents.
+一个收录个性化蒸馏 Skill 的精选列表。
+A curated collection of distilled personalized skills.
 
 [人物](#👤-人物--figures) • [书籍](#📚-书籍--books) • [品牌](#🏪-品牌--brands) • [贡献](#🤝-贡献--contributing)
 
