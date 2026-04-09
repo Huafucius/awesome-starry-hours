@@ -5,6 +5,7 @@
 ### 人类群星闪耀时
 
 > 你是万千星辰中的一颗，于某个 Ta 而言却是整个世界。
+>
 > *You are one star among countless others; to someone, you are an entire world.*
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](./CONTRIBUTING.md)
