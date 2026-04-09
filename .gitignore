@@ -16,6 +16,8 @@ Desktop.ini
 
 # Dependencies
 node_modules/
+__pycache__/
+*.pyc
 
 # Build
 dist/

@@ -12,24 +12,47 @@
 
 **English** • [简体中文](README.md)
 
-A curated collection of distilled personalized skills.
+A repository that now does two things: curates external skills and incubates in-repo skill-factory prototypes.
 
-[Figures](#-figures) • [Books](#-books) • [Brands](#-brands) • [Contributing](#-contributing)
+[Repository Structure](#-repository-structure) • [Figures](#-figures) • [Books](#-books) • [Brands](#-brands) • [Contributing](#-contributing)
 
 </div>
 
 ---
 
-This repository only includes **real**, **publicly accessible** skill repositories that can be clearly traced back to a specific **figure**, **book**, or **brand**. We reject generic role-playing and empty hodgepodges, focusing entirely on extracting truly reusable **thinking frameworks** and **business logic**.
+This repository now has two tracks:
+
+1. **Awesome index**: a curated list of real, public skill repositories that clearly trace back to a specific **figure**, **book**, or **brand**.
+2. **Skill factory prototypes**: in-repo skills under `skills/` that generate new distilled skills, starting with public-information figure skills.
+
+We reject generic role-playing and empty hodgepodges, focusing entirely on extracting truly reusable **thinking frameworks** and **business logic**.
 
 ## Contents
 
 - [🌟 Featured](#-featured)
+- [🧪 Repository Structure](#-repository-structure)
 - [👤 Figures](#-figures)
 - [📚 Books](#-books)
 - [🏪 Brands](#-brands)
 - [📏 Selection Criteria](#-selection-criteria)
 - [🤝 Contributing](#-contributing)
+
+## 🧪 Repository Structure
+
+### Part 1: Awesome index
+
+- `README.md` / `README.en.md`
+- Continuously curates external `xx.skill` repositories
+
+### Part 2: In-repo skill factory
+
+- `skills/create-figure-skill/`
+  - A prototype skill whose job is to create new public-information figure skills
+  - Uses a `source -> research -> distilled -> SKILL.md` pipeline
+- `skills/luxun-perspective/`
+  - A Lu Xun demo skill generated as the first end-to-end verification artifact
+
+The current prototype only supports **figures**. Book and brand generators come later.
 
 ## 🌟 Featured
 

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "references/sources/cleaned/01_biography_overview.md",
+    "title": "鲁迅 biography overview",
+    "source_url": "https://zh.wikipedia.org/wiki/%E9%B2%81%E8%BF%85",
+    "source_type": "encyclopedia",
+    "language": "zh-CN",
+    "reliability": "medium",
+    "retrieved_at": "2026-04-09",
+    "summary": "# 鲁迅 biography overview 鲁迅，本名周树人，1881 年生于绍兴，1936 年卒于上海，是中国现代文学和思想史上的关键人物之一。 从经历上看，他至少有几个决定性转折： - 少年时期家道中落，使他很早感受到礼教、体面与现实困顿之间的裂缝。 - 留学日本时，最初学医，后来因为看到“愚弱的国民即使体格健全，也只会做看客与示众材料”，转向文学与..."
+  },
+  {
+    "file": "references/sources/cleaned/02_madman_diary_excerpt.md",
+    "title": "《狂人日记》节选",
+    "source_url": "https://zh.wikisource.org/wiki/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%A8%98",
+    "source_type": "primary_text",
+    "language": "zh-CN",
+    "reliability": "high",
+    "retrieved_at": "2026-04-09",
+    "summary": "# 《狂人日记》节选 这篇作品最关键的不是“疯”，而是借“疯”的视角把正常社会重新照亮。 关键段落： > 凡事总须研究，才会明白。 > 我翻开历史一查，这历史没有年代，歪歪斜斜的每叶上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字是“吃人”！ > 你们可以改了，从真心改起！要晓得将来容不得吃人的人，活在世上。 > ..."
+  },
+  {
+    "file": "references/sources/cleaned/03_what_happens_after_nora_leaves.md",
+    "title": "《娜拉走后怎样》节选",
+    "source_url": "https://zh.wikisource.org/wiki/%E5%A8%9C%E6%8B%89%E8%B5%B0%E5%90%8E%E6%80%8E%E6%A0%B7",
+    "source_type": "primary_text",
+    "language": "zh-CN",
+    "reliability": "high",
+    "retrieved_at": "2026-04-09",
+    "summary": "# 《娜拉走后怎样》节选 这篇讲演能很好地代表鲁迅的现实主义批评方法：他会把抽象解放口号拉回物质条件与制度约束。 关键段落： > 人生最苦痛的是梦醒了无路可以走。 > 然而娜拉既然醒了，是很不容易回到梦境的，因此只得走；可是走了以后，有时却也免不掉堕落或回来。否则，就得问：她除了觉醒的心以外，还带了什么去？……就是要有钱。 > 梦是好的；否则，钱是要紧的。 ..."
+  }
+]

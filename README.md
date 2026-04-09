@@ -12,24 +12,47 @@
 
 [English](README.en.md) • **简体中文**
 
-一个收录个性化蒸馏 Skill 的精选列表。
+一个既收录外部 skill、也在仓库内孵化 skill factory 原型的精选项目。
 
-[人物](#-人物--figures) • [书籍](#-书籍--books) • [品牌](#-品牌--brands) • [贡献](#-贡献--contributing)
+[仓库结构](#-仓库结构--repository-structure) • [人物](#-人物--figures) • [书籍](#-书籍--books) • [品牌](#-品牌--brands) • [贡献](#-贡献--contributing)
 
 </div>
 
 ---
 
-这里只收录**真实存在**、**公开可访问**，并且能明确溯源到具体**人物**、**书籍**或**品牌**的 Skill 仓库。我们拒绝泛泛的角色扮演和空洞的大杂烩，专注于提取真正可复用的**思维框架**与**业务逻辑**。
+这个仓库现在包含两部分：
+
+1. **Awesome 索引**：收录真实存在、公开可访问，并且能明确溯源到具体**人物**、**书籍**或**品牌**的 Skill 仓库。
+2. **Skill Factory 原型**：在 `skills/` 目录中孵化“创造 skill 的 skill”，先从人物蒸馏开始，后续扩展到书籍和品牌。
+
+我们拒绝泛泛的角色扮演和空洞的大杂烩，专注于提取真正可复用的**思维框架**与**业务逻辑**。
 
 ## 目录 / Contents
 
 - [🌟 精选 / Featured](#-精选--featured)
+- [🧪 仓库结构 / Repository Structure](#-仓库结构--repository-structure)
 - [👤 人物 / Figures](#-人物--figures)
 - [📚 书籍 / Books](#-书籍--books)
 - [🏪 品牌 / Brands](#-品牌--brands)
 - [📏 收录标准 / Selection Criteria](#-收录标准--selection-criteria)
 - [🤝 贡献 / Contributing](#-贡献--contributing)
+
+## 🧪 仓库结构 / Repository Structure
+
+### Part 1: Awesome 索引
+
+- `README.md` / `README.en.md`
+- 面向社区，持续收录外部 `xx.skill` 仓库
+
+### Part 2: In-Repo Skill Factory
+
+- `skills/create-figure-skill/`
+  - 一个“创造人物 skill 的 skill”原型
+  - 使用 `source -> research -> distilled -> SKILL.md` 流程，把公开人物蒸馏成新 skill
+- `skills/luxun-perspective/`
+  - 用 `create-figure-skill` 原型验证生成的鲁迅 demo skill
+
+当前原型只支持**人物**；书籍与品牌生成器会在后续版本继续补齐。
 
 ## 🌟 精选 / Featured
 

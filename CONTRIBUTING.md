@@ -11,37 +11,42 @@
 - 必须能明确溯源到**具体的一位人物**、**具体的一本书籍**或**具体的一个品牌**
 - 描述应清晰说明该 skill 蒸馏了什么具体内容
 
-## 贡献原创 Skill / Contribute Original Skills
+## 贡献仓库内 Skill / Contribute In-Repo Skills
 
-在 `skills/` 目录下创建 `.md` 文件：
+仓库内的原创 skill 现在采用**文件夹结构**，而不是单个 `.md` 文件。
 
 ```
 skills/
-├── your-skill-name.md
+├── create-figure-skill/
+│   ├── SKILL.md
+│   ├── references/
+│   └── scripts/
+├── luxun-perspective/
+│   ├── SKILL.md
+│   └── references/
 └── ...
 ```
 
-**Skill 文件结构 / Structure:**
+**推荐结构 / Recommended structure:**
 
-```markdown
----
-name: skill 名称
-figure: 蒸馏对象
-source: 主要参考资料
----
-
-## 核心框架 / Core Framework
-（提取的思维模型、方法论）
-
-## 适用场景 / When to Use
-（什么问题适合用这个 skill）
-
-## 局限性 / Limitations
-（什么场景不适用）
-
-## Skill 正文 / Skill Body
-（实际的 skill prompt 内容）
+```text
+your-skill/
+├── SKILL.md
+├── references/
+│   ├── sources/
+│   ├── research/
+│   └── distilled/
+└── scripts/
 ```
+
+**最低要求 / Minimum requirements:**
+- 必须有 `SKILL.md`
+- 如果 skill 基于公开资料蒸馏，请尽量保留 `references/`
+- 如果有确定性工作流（采集、清洗、装配、检查），放进 `scripts/`
+
+**特别说明 / Note:**
+- `create-figure-skill` 这类“做 skill 的 skill”也是允许的
+- 当前仓库内原型先聚焦人物 skill，书籍与品牌会后续补齐
 
 ## 原则 / Principles
 
