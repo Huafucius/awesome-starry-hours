@@ -9,7 +9,7 @@ from pathlib import Path
 REQUIRED_FILES = [
     "SKILL.md",
     "meta.json",
-    "references/sources/index.json",
+    "references/sources/manifest.json",
     "references/distilled/core.md",
     "references/distilled/heuristics.md",
     "references/distilled/expression.md",
@@ -52,14 +52,14 @@ def main() -> None:
         print("- no cleaned source files found")
         raise SystemExit(1)
 
-    index_text = (
-        (skill_dir / "references" / "sources" / "index.json")
+    manifest_text = (
+        (skill_dir / "references" / "sources" / "manifest.json")
         .read_text(encoding="utf-8")
         .strip()
     )
-    if index_text in {"", "[]"}:
+    if manifest_text in {"", "[]"}:
         print("AUDIT FAILED")
-        print("- source index is empty")
+        print("- source manifest is empty")
         raise SystemExit(1)
 
     meta_text = (skill_dir / "meta.json").read_text(encoding="utf-8")

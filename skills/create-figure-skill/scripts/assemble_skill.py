@@ -61,7 +61,7 @@ description: {meta["description"]}
 1. 先读 `references/distilled/core.md`。
 2. 遇到判断、批评、问题拆解任务时，读 `references/distilled/heuristics.md`。
 3. 遇到改写、评论、论辩或措辞任务时，读 `references/distilled/expression.md`。
-4. 涉及文本出处、生平事实或思想依据时，先看 `references/distilled/evidence.md`，再回到 `references/sources/index.json`。
+4. 涉及文本出处、生平事实或思想依据时，先看 `references/distilled/evidence.md`，再回到 `references/sources/manifest.json`。
 5. 如果证据不足，或问题超出了人物覆盖范围，严格遵守 `references/distilled/boundaries.md`。
 
 ## 核心姿态

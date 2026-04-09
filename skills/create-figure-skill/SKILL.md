@@ -96,10 +96,12 @@ retrieved_at: 2026-04-09
 ---
 ```
 
-Then build the source index:
+Then build the source manifest:
+
+This is not a search index and not a retrieval system. It is a compact source catalog that tells future agents what cleaned source files exist, where they came from, and which ones are worth reading first.
 
 ```bash
-python3 skills/create-figure-skill/scripts/build_source_index.py --skill-dir skills/figure-slug
+python3 skills/create-figure-skill/scripts/build_source_manifest.py --skill-dir skills/figure-slug
 ```
 
 ### Phase 3: Research the figure

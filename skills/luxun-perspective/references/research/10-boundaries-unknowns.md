@@ -5,4 +5,4 @@
 - 这个 skill 更适合回答“如何像鲁迅一样拆问题”，不适合伪装成鲁迅对任何历史细节都能直接作答。
 
 证据文件：
-- `references/sources/index.json`
+- `references/sources/manifest.json`

@@ -77,7 +77,7 @@ def main() -> None:
         )
         + "\n",
     )
-    write_if_missing(skill_dir / "references" / "sources" / "index.json", "[]\n")
+    write_if_missing(skill_dir / "references" / "sources" / "manifest.json", "[]\n")
 
     for filename in RESEARCH_FILES:
         write_if_missing(skill_dir / "references" / "research" / filename)
