@@ -21,12 +21,9 @@ A curated index of external skills — and an in-repo factory that makes more.
 
 ---
 
-This repository now has two tracks:
+This repo distills three kinds of sources into skills you can invoke in Claude Code: the **figures**, **books**, and **brands** worth learning from — past and present.
 
-1. **Awesome index**: a curated list of real, public skill repositories that clearly trace back to a specific **figure**, **book**, or **brand**.
-2. **Skill factory prototypes**: in-repo skills under `skills/` that generate new distilled skills, starting with public-information figure skills.
-
-No role-play packs, no catch-all bundles — only repos that extract a real **thinking framework** or **business logic**.
+No role-play packs, no catch-all bundles — only repos that distill a real **thinking framework** or **business logic**.
 
 ## Contents
 
@@ -40,24 +37,20 @@ No role-play packs, no catch-all bundles — only repos that extract a real **th
 
 ## 🧪 Repository Structure
 
-### Part 1: Awesome index
+### Part 1: The index
 
 - `README.md` / `README.en.md`
-- Continuously curates external `xx.skill` repositories
+- Continuously curates external `xx.skill` repos
 
-### Part 2: In-repo skill factory
+### Part 2: The factory
 
-- `skills/create-figure-skill/`
-  - A prototype skill whose job is to create new public-information figure skills
-  - Uses a `source -> research -> distilled -> SKILL.md` pipeline
-- `skills/luxun-perspective/`
-  - A Lu Xun demo skill generated as the first end-to-end verification artifact
+- `skills/create-figure-skill/` — a skill that builds new figure skills; pipeline `source → research → distilled → SKILL.md`
 
-The current prototype only handles **figures**. Books and brands come later.
+The factory only handles **figures** for now. Books and brands come later.
 
 ## 🌟 Featured
 
-Repositories that clearly demonstrate a solid `source -> skill` distillation path:
+Three repos that best show the `source → skill` path:
 
 - [HughYau/qiushi-skill](https://github.com/HughYau/qiushi-skill) — Distills problem-solving methods from Mao Zedong's works.
 - [slavingia/skills](https://github.com/slavingia/skills) — Deconstructs a book into a set of callable commands, showcasing the `book -> skill` path.
@@ -67,7 +60,7 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 
 ## 👤 Figures
 
-> Extracting the mental models or working methods of specific figures into callable skills.
+> Turn a person's thinking or working methods into a callable skill.
 
 ### Thinkers
 
@@ -120,7 +113,7 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 
 ## 📚 Books
 
-> Distilling core architectures, methodologies, or rules from classic books into skills.
+> Turn a book's structure, methods, or rules into a callable skill.
 
 | Repo | Title | Description |
 |------|-------|-------------|
@@ -130,7 +123,7 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 
 ## 🏪 Brands
 
-> Converting physical brands into AI-callable information interfaces.
+> Turn a real-world brand into an AI-callable interface. Everything wants to be a CLI.
 
 | Repo | Brand Name | Description |
 |------|------------|-------------|
@@ -138,19 +131,19 @@ Repositories that clearly demonstrate a solid `source -> skill` distillation pat
 
 ## 📏 Selection Criteria
 
-- **Real & Open**: Repositories must exist and be publicly accessible.
-- **Clear Origin**: Entries must clearly correspond to **one or more specific people**, a **specific book**, or a **specific brand**.
-- **Focus on Distillation**: The core value must be extracting frameworks and logic, not merely imitating tone or role-playing.
-- We do not include generic targets (e.g., "Any Real Person") or broad skill packs that merely borrow a name; however, tightly scoped multi-person bundles are allowed when they enumerate a recognizable set of notable figures.
+- **Real & open**: the repo exists and is publicly accessible.
+- **Clear source**: maps to **one or more named people**, **a specific book**, or **a specific brand**.
+- **Distillation, not mimicry**: extract a framework or logic — don't just imitate a tone or cosplay a role.
+- No generic targets ("any real person"), no grab-bag packs. Multi-person bundles are fine when the set of people is named and recognizable.
 
 ## 🤝 Contributing
 
-PRs are welcome. Please ensure:
+PRs welcome. Please make sure:
 
-1. The repository is publicly accessible.
-2. It falls under one of the three categories: Figures, Books, or Brands.
-3. The name column contains **only exact names**; for multi-person bundles, list the most recognizable named figures explicitly.
-4. The description clearly states what specific content was distilled, based on the repository's own README.
+1. The repo is publicly accessible.
+2. It fits one of the three categories: Figures, Books, Brands.
+3. The name column uses **exact names**; for multi-person bundles, list the most recognizable ones.
+4. The description is grounded in the repo's own README and says what was distilled.
 
 ## License
 

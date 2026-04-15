@@ -38,7 +38,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Create a figure skill scaffold.")
     parser.add_argument("--name", required=True, help="Figure display name")
     parser.add_argument(
-        "--slug", required=True, help="Folder slug, e.g. luxun-perspective"
+        "--slug", required=True, help="Folder slug, e.g. feynman-perspective"
     )
     parser.add_argument(
         "--output-dir",

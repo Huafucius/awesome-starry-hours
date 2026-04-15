@@ -7,9 +7,9 @@
 *Found a great personalized skill repo? Edit `README.md`, add it to the right category table, and submit a PR.*
 
 **要求 / Requirements:**
-- 仓库必须真实存在且可访问
-- 必须能明确溯源到**具体的一位人物**、**具体的一本书籍**或**具体的一个品牌**
-- 描述应清晰说明该 skill 蒸馏了什么具体内容
+- 仓库必须真实存在、可访问
+- 必须对应到**一个或多个具体人物**、**一本具体的书**或**一个具体品牌**
+- 描述应说清楚该 skill 蒸馏了什么
 
 ## 贡献仓库内 Skill / Contribute In-Repo Skills
 
@@ -21,9 +21,6 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   └── scripts/
-├── luxun-perspective/
-│   ├── SKILL.md
-│   └── references/
 └── ...
 ```
 
@@ -46,7 +43,7 @@ your-skill/
 
 **特别说明 / Note:**
 - `create-figure-skill` 这类“做 skill 的 skill”也是允许的
-- 当前仓库内原型先聚焦人物 skill，书籍与品牌会后续补齐
+- 当前工厂只做人物 skill，书籍和品牌以后再说
 
 ## 原则 / Principles
 

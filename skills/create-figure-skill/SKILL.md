@@ -20,7 +20,7 @@ Do not reduce the figure to quotes, biography trivia, or cosplay.
 Confirm with the user:
 - The exact figure name.
 - Any disambiguation (e.g., which person if they share a name).
-- The output slug (e.g., `luxun-perspective`).
+- The output slug (e.g., `feynman-perspective`).
 - The intended use case: advisor, critic, writing lens, decision lens, etc.
 
 ### Phase 1: Create Scaffold
