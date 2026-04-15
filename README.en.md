@@ -1,4 +1,4 @@
-# 群星 · Starry Hours
+# Awesome Starry Hours
 
 <div align="center">
 
@@ -21,7 +21,9 @@ A curated index of external skills — and an in-repo factory that makes more.
 
 ---
 
-This repo distills three kinds of sources into skills you can invoke in Claude Code: the **figures**, **books**, and **brands** worth learning from — past and present.
+Named after Stefan Zweig's *Sternstunden der Menschheit* — literally "starry hours of mankind", those decisive moments when history turned on a single person, a single book, or a single idea.
+
+This repo distills those three kinds of sources into **callable skills**: the **figures**, **books**, and **brands** worth learning from — past and present.
 
 No role-play packs, no catch-all bundles — only repos that distill a real **thinking framework** or **business logic**.
 
@@ -91,13 +93,13 @@ Three repos that best show the `source → skill` path:
 | [alchaincyf/zhang-yiming-skill](https://github.com/alchaincyf/zhang-yiming-skill) | Zhang Yiming | Captures Zhang Yiming's judgments around information distribution, organizational efficiency, and long-term business competitiveness. |
 | [alchaincyf/paul-graham-skill](https://github.com/alchaincyf/paul-graham-skill) | Paul Graham | Distills Paul Graham's startup, writing, and product judgment into a callable founder-mentor skill. |
 | [alchaincyf/naval-skill](https://github.com/alchaincyf/naval-skill) | Naval Ravikant | Turns Naval's frameworks for wealth, leverage, and life decisions into a cognitive operating system that spans business and philosophy. |
-| [AytuncYildizli/legends-mcp](https://github.com/AytuncYildizli/legends-mcp) | Elon Musk, Steve Jobs, Jeff Bezos, Warren Buffett, Charlie Munger, Paul Graham, Naval Ravikant | A multi-person bundle built around legendary founders and investors, enabling debate-style analysis directly inside Claude. |
+| [AytuncYildizli/legends-mcp](https://github.com/AytuncYildizli/legends-mcp) | Elon Musk, Steve Jobs, Jeff Bezos, Warren Buffett, Charlie Munger, Paul Graham, Naval Ravikant | A multi-person bundle built around legendary founders and investors, enabling debate-style analysis inside any agent. |
 
 ### Technical Leaders
 
 | Repo | Name | Description |
 |------|------|-------------|
-| [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Andrej Karpathy | Packages Karpathy's observations on LLM coding mistakes and workflow discipline into directly usable Claude Code principles. |
+| [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Andrej Karpathy | Packages Karpathy's observations on LLM coding mistakes and workflow discipline into principles any agent can adopt directly. |
 | [alchaincyf/karpathy-skill](https://github.com/alchaincyf/karpathy-skill) | Andrej Karpathy | Distills Karpathy's own cognitive operating system into a runnable skill focused on model intuition, engineering simplification, and explanation quality. |
 | [alchaincyf/ilya-sutskever-skill](https://github.com/alchaincyf/ilya-sutskever-skill) | Ilya Sutskever | Extracts Ilya's thinking about scaling, research taste, and AI safety boundaries into a technical judgment skill. |
 | [rjs/shaping-skills](https://github.com/rjs/shaping-skills) | Ryan Singer | Breaks Ryan Singer's Shape Up / shaping methods into executable skills for framing problems and roughing out solution spaces. |

@@ -1,6 +1,6 @@
 ---
 name: create-figure-skill
-description: A DeepSearch-driven workflow skill to distill any public figure into a callable Claude skill. Use this to orchestrate parallel search, data cleaning, structural research, and skill assembly.
+description: A DeepSearch-driven workflow skill to distill any public figure into a callable agent skill. Use this to orchestrate parallel search, data cleaning, structural research, and skill assembly.
 ---
 
 # Create Figure Skill

@@ -34,4 +34,4 @@ These 4 dimensions are mandatory:
 
 The goal is not to perfectly imitate the person.
 
-The goal is to produce a source-backed operating model that helps Claude reason better in that person's style of judgment.
+The goal is to produce a source-backed operating model that helps an agent reason better in that person's style of judgment.

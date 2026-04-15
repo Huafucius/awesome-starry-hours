@@ -1,4 +1,4 @@
-# 群星 · Starry Hours
+# Awesome Starry Hours
 
 <div align="center">
 
@@ -21,7 +21,9 @@
 
 ---
 
-这个仓库把三类对象蒸馏成 Claude Code 可调用的 Skill：历史与当代里值得学的**人物**、**书籍**、**品牌**。
+名字取自茨威格的《人类群星闪耀时》——那些让历史加速的瞬间，往往出自一个人、一本书、或一个品牌。
+
+这个仓库把这三类对象蒸馏成**可调用的 Skill**：历史与当代里值得学的**人物**、**书籍**、**品牌**。
 
 不收泛泛的角色扮演，不收空洞的大杂烩——只蒸馏**思维框架**与**业务逻辑**。
 
@@ -91,13 +93,13 @@
 | [alchaincyf/zhang-yiming-skill](https://github.com/alchaincyf/zhang-yiming-skill) | 张一鸣 | 围绕张一鸣在信息分发、组织效率与长期竞争力上的判断方式，整理为企业经营 Skill。 |
 | [alchaincyf/paul-graham-skill](https://github.com/alchaincyf/paul-graham-skill) | Paul Graham | 提炼 Paul Graham 在写作、创业与产品判断上的认知框架，形成可调用的创业导师型 Skill。 |
 | [alchaincyf/naval-skill](https://github.com/alchaincyf/naval-skill) | Naval Ravikant | 将 Naval 的财富、杠杆与人生决策框架蒸馏为兼具商业与人生哲学的认知操作系统。 |
-| [AytuncYildizli/legends-mcp](https://github.com/AytuncYildizli/legends-mcp) | Elon Musk、Steve Jobs、Jeff Bezos、Warren Buffett、Charlie Munger、Paul Graham、Naval Ravikant | 一个围绕传奇创业者与投资人构建的多人 bundle，可在 Claude 中直接发起多名人辩论式分析。 |
+| [AytuncYildizli/legends-mcp](https://github.com/AytuncYildizli/legends-mcp) | Elon Musk、Steve Jobs、Jeff Bezos、Warren Buffett、Charlie Munger、Paul Graham、Naval Ravikant | 一个围绕传奇创业者与投资人构建的多人 bundle，可直接在 Agent 中发起多名人辩论式分析。 |
 
 ### 技术领袖
 
 | Repo | 人名 | 简介 |
 |------|------|------|
-| [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Andrej Karpathy | 将 Karpathy 对 LLM 编程失误与工作流的观察整理为 Claude Code 可直接采用的技术原则。 |
+| [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | Andrej Karpathy | 将 Karpathy 对 LLM 编程失误与工作流的观察，整理为 Agent 可直接采用的技术原则。 |
 | [alchaincyf/karpathy-skill](https://github.com/alchaincyf/karpathy-skill) | Andrej Karpathy | 将 Karpathy 本人的认知操作系统蒸馏为可运行 Skill，强调模型直觉、工程简化与解释能力。 |
 | [alchaincyf/ilya-sutskever-skill](https://github.com/alchaincyf/ilya-sutskever-skill) | Ilya Sutskever | 围绕 Ilya 在 scaling、研究品味与 AI 安全边界上的思考，提炼成技术判断 Skill。 |
 | [rjs/shaping-skills](https://github.com/rjs/shaping-skills) | Ryan Singer | 将 Ryan Singer 的 Shape Up / shaping 方法拆成可执行技能，用于问题塑形与方案粗建模。 |
