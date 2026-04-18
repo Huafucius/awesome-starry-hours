@@ -8,9 +8,11 @@ Produces:
     <output-dir>/<slug>/
         SKILL.md             (stub with frontmatter)
         meta.json            (slug, created_at)
+        CHANGELOG.md         (append-only pass log; first bootstrap entry seeded)
         modes/               (five placeholder .md files)
         research/            (four placeholder .md files)
             README.md        (stub index for the research layer)
+            probe-log.md     (append-only probe log)
         sources/
             manifest.json    (empty sources array)
             prior/
@@ -83,6 +85,33 @@ PRIOR_SNAPSHOT_STUB = """# Prior Snapshot
 """
 
 
+CHANGELOG_STUB = """# Changelog
+
+<!-- Append-only. One entry per pass. Newest entry on top. -->
+<!-- See create-figure-skill/references/maintenance-operations.md for the operation vocabulary. -->
+
+## {today} · bootstrap
+
+- Route: `bootstrap`
+- Operations: `ingest` (initial corpus)
+- Touched: all axes, all modes
+- Notes: initial scaffold created by `scripts/scaffold.py`.
+"""
+
+
+PROBE_LOG_STUB = """# Probe Log
+
+<!-- Append-only. One entry per probe during Phase 6 · Interface Assembly & Probe. -->
+<!-- Format per entry: -->
+<!--   ## YYYY-MM-DD · <mode> · <pass/fail/surprise> -->
+<!--   - Prompt: ... -->
+<!--   - Outcome: ... -->
+<!--   - Boundary update: (link to boundaries.md section, or "none") -->
+
+<!-- Probes that failed and were fixed in the same pass stay in the log as historical record. -->
+"""
+
+
 def create_skeleton(slug: str, output_dir: Path) -> Path:
     skill_dir = output_dir / slug
     if not SLUG_RE.fullmatch(slug):
@@ -135,13 +164,18 @@ def create_skeleton(slug: str, output_dir: Path) -> Path:
     (skill_dir / "SKILL.md").write_text(SKILL_MD_STUB.format(slug=slug))
 
     # meta.json
+    today = dt.date.today().isoformat()
     (skill_dir / "meta.json").write_text(
         json.dumps(
-            {"slug": slug, "created_at": dt.date.today().isoformat()},
+            {"slug": slug, "created_at": today},
             indent=2,
         )
         + "\n"
     )
+
+    # Maintenance-layer artifacts. Append-only; LLM writes content, audit does not check.
+    (skill_dir / "CHANGELOG.md").write_text(CHANGELOG_STUB.format(today=today))
+    (research_dir / "probe-log.md").write_text(PROBE_LOG_STUB)
 
     return skill_dir
 

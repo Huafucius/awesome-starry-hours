@@ -6,6 +6,7 @@ This directory records the repository's major editorial and product plans.
 
 | Date | Topic | Summary |
 |------|-------|---------|
+| [2026-04-18](plans/2026-04-18-figure-skill-maintenance-layer.md) | Figure skill maintenance layer | Add CHANGELOG + probe-log stubs, introduce ingest/query/file-back/lint operation vocabulary, keep v2 architecture intact |
 | [2026-04-18](plans/2026-04-18-rewrite-create-figure-skill-phases-v2.md) | Rewrite figure workflow to v2 | Fully refactor create-figure-skill around route-aware knowledge compilation, simpler reference docs, and deterministic choke-point scripts |
 | [2026-04-09](plans/2026-04-09-add-a-tier-figures.md) | Add A-tier figures | Expand the figure index with the approved A-tier candidates from the second and third search rounds |
 | [2026-04-09](plans/2026-04-09-create-figure-skill-prototype.md) | Create figure skill prototype | Add a runnable `create-figure-skill` prototype and verify it end-to-end with a sample figure |

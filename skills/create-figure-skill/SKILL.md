@@ -18,6 +18,19 @@ This is a methodology, not a template filler. Every figure is different; the res
 
 Before starting, read `references/research-stance.md` and `references/route-planning.md`. The first sets the posture; the second tells you what kind of pass you are running and which deterministic gates still matter.
 
+## Operations within a pass
+
+Routes name the **pass** (`bootstrap` / `update` / `repair` / `extend`). Operations name the **verb**. A single pass usually involves several operations.
+
+- `ingest` — new evidence enters `sources/*/raw/`, gets normalized into `cleaned/`, manifest rebuilt.
+- `query` — the generated skill is used at run time; a mode answers a real prompt. This is the point of the compilation.
+- `file-back` — when a query produces a durable synthesis, archive it into `sources/distillations/cleaned/` so the skill accumulates instead of re-deriving.
+- `lint` — periodic self-audit of the knowledge layer: orphan claims, stale "no evidence" tags, quote drift, unfilled adversarial gaps. LLM judgment, not script.
+
+Every generated skill keeps two append-only records: `CHANGELOG.md` (one entry per pass) and `research/probe-log.md` (one entry per probe). Both are seeded by `scripts/scaffold.py` and extended by the LLM; `scripts/audit.py` does not grade their content.
+
+See `references/maintenance-operations.md` for when to use each operation and the file-back / lint details.
+
 ## The workflow — six phases
 
 Treat this skill as a knowledge compiler for public figures:
@@ -130,6 +143,7 @@ Failures feed back into the modes, the router, and `research/boundaries.md`. Tha
 | Situation | File to consult |
 |---|---|
 | Phase 1 Route & Target Spec — choose `bootstrap` / `update` / `repair` / `extend` | `references/route-planning.md` |
+| Any pass — operation vocabulary (`ingest` / `query` / `file-back` / `lint`) | `references/maintenance-operations.md` |
 | Any time — posture and anti-patterns | `references/research-stance.md` |
 | Phase 3 Evidence Expansion — query planning, parallelism, adversarial pass | `references/deepresearch-playbook.md` |
 | Phase 4 Corpus Preparation — frontmatter schema, reliability labels, format handling | `references/source-policy.md` |

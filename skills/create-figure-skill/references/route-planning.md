@@ -57,9 +57,10 @@ Treat the generated skill as a compiled package. Not all files have the same mut
 - **Immutable evidence trail**
   - `sources/*/raw/` — never edit in place.
   - `sources/prior/snapshot.md` — keep the original snapshot intact.
-- **Append-only by default**
-  - Notes explaining how later evidence corrected the prior.
-  - Update logs and probe records, if kept.
+- **Append-only**
+  - `CHANGELOG.md` — one entry per pass. Never rewrite earlier entries.
+  - `research/probe-log.md` — one entry per probe. Failed probes stay as historical record.
+  - Dated notes alongside the prior snapshot that explain how later evidence corrected it.
 - **Regenerated on demand**
   - `sources/manifest.json`
   - `research/*.md`
