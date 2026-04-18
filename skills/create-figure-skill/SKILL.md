@@ -145,6 +145,7 @@ Failures feed back into the modes, the router, and `research/boundaries.md`. Tha
 | Phase 1 Route & Target Spec — choose `bootstrap` / `update` / `repair` / `extend` | `references/route-planning.md` |
 | Any pass — operation vocabulary (`ingest` / `query` / `file-back` / `lint`) | `references/maintenance-operations.md` |
 | Any time — posture and anti-patterns | `references/research-stance.md` |
+| Phase 2 Prior Capture — snapshot structure | `references/prior-snapshot-template.md` |
 | Phase 3 Evidence Expansion — query planning, parallelism, adversarial pass | `references/deepresearch-playbook.md` |
 | Phase 4 Corpus Preparation — frontmatter schema, reliability labels, format handling | `references/source-policy.md` |
 | Phase 5 Knowledge Distillation — the four axes and their dimensions | `references/four-axes.md` |

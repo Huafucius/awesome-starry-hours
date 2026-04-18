@@ -53,6 +53,18 @@ A figure skill whose `thinking.md` reads as slogans instead of these dimensions 
 
 How they speak and write. Five layers of granularity. Layers 1-3 are sub-attentional and hardest to fake; layers 4-5 are meaning-bearing and easier to imitate but essential for identity. `bootstrap` usually covers all five layers; incremental passes refresh only the layers touched by the new evidence or by the interface change.
 
+### Scope note — when the figure is not a continuous-prose writer
+
+The 字/词/句/段/章 scheme below is a **continuous-prose scaffold**. It generalizes cleanly to most essayists, novelists, and correspondents. It generalizes badly to three common figure types, each of which needs its own adaptation rather than a forced fit:
+
+- **Aphorists and fragmentary writers** (Nietzsche, La Rochefoucauld, Lichtenberg). 段 collapses — the aphorism *is* the paragraph. The missing layer is **arrangement logic** between aphorisms: why this fragment after that one, how the constellation is built. Add an "arrangement" layer above 句 and note explicitly when the figure also writes in a second register (Zarathustra inside Nietzsche; 野草 inside 鲁迅).
+- **Parable / persona writers and classical-language figures** (Zhuangzi, Kierkegaard, the Analects). Voice comes through **staged speakers** (the 寓言 of Zhuangzi, Kierkegaard's pseudonyms) and through genre conventions (classical-Chinese particles; biblical cadence). Add a **parable / persona** layer above 章. Note when the figure's voice is inseparable from translation or commentary mediation.
+- **Visual-primary figures** (Kurosawa, Cartier-Bresson, any filmmaker, painter, or choreographer). The five-layer *granularity* idea still works, but the single-scale axis does not. Use a **two-dimensional grid**: unit size (frame → shot → scene → act → work) × channel (image, movement, sound, performance, duration). The text layer is a projection (screenplay, interview, artist statement) and `cleaned/` sources should carry a `note:` field stating what the projection loses.
+
+For bench scientists and other figures whose output is mostly technical writing in a conventional register, `research/expression.md` may legitimately be thin. Do not inflate it. Note the thinness and put the interesting material in `thinking.md` (methods, notebook style) and `identity.md` (stance).
+
+The existing five layers follow below. Treat them as the default, not the only decomposition.
+
 ### 字 · Character / grapheme layer
 
 - Orthographic tics — punctuation preferences (em-dash, absence of quotation marks, 破折号 usage, no-quotes-McCarthy).
@@ -123,6 +135,17 @@ Questions this figure never answered cleanly. Internal contradictions that staye
 ### 5. Knowledge cutoff
 
 The figure's death date (if deceased). Any post-death topic is strict extrapolation. This is the hard rule for `advisory` mode: phrases like "he would say X about AI" must be softened to "based on his documented stance on Y, it is plausible that..." The cutoff is also relevant for `dialogue` mode — the figure cannot know about events after their death.
+
+### 6. Archive / Reception integrity
+
+Where the figure's record, canon, or received view is itself contested. Without this section the skill treats politically stabilized readings as fact. Write as applicable:
+
+- **Contested primary texts.** Forgeries, posthumously assembled works attributed to the figure, composite or multi-author texts, translation-mediated primaries. Examples: *Der Wille zur Macht* is Elisabeth Förster-Nietzsche and Peter Gast, not Nietzsche. The *Zhuangzi* Outer and Miscellaneous chapters are mostly not Zhuangzi. *The Analects* has strata. Post-1949 editions of 鲁迅 elided material.
+- **Weaponized or politically canonized reception.** When a later regime, school, or movement captured the figure's reputation and now determines what "everyone knows" about them. Name the settlement and whose interests it serves. Do not collapse the received view with the figure's actual positions.
+- **Rival custodianships.** Competing schools of reading (Kaufmann vs. Heidegger vs. Deleuze on Nietzsche; Graham vs. Ziporyn on Zhuangzi). Name the rival readings; do not pick one silently.
+- **The afterlife as a distinct object.** For figures whose posthumous evolution is more consequential than their lived evolution, record it here — not buried inside "evolution". The figure-as-she-lived and the figure-as-she-is-now-received are two objects and the skill must be able to address either.
+
+This section is optional for non-canonical figures. For any figure whose reputation predates the agent's training data, it is usually mandatory.
 
 ---
 

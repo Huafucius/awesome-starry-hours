@@ -39,6 +39,16 @@ An agent researching a figure has four source types, each with a built-in bias:
 
 For `bootstrap`, never collect from only one category. For `update`, `repair`, and `extend`, start narrow if you must — but before you let a strong new claim into the skill, ask whether you have given it enough cross-category pressure. See `source-policy.md` for category rules.
 
+### Adversarial work is three jobs, not one
+
+"Critical" is a storage category. Adversarial pressure is an epistemic job, and for contested figures it splits into three distinct tasks that collapse into each other if you are not careful:
+
+- **Textual-critical** — *is this really what the figure wrote?* Forgeries, posthumous compilations edited by family or estate (Nietzsche's sister and *Der Wille zur Macht*), composite authorship (*Zhuangzi* Inner vs. Outer vs. Miscellaneous chapters), Cultural-Revolution-era editorial elision (鲁迅). Without this pass, interpretive debate happens on an unstable text.
+- **Interpretive** — *given the text, what does it mean?* Competing readings by serious scholars, schools of interpretation, philosophical or critical traditions that disagree. Kaufmann vs. Heidegger vs. Deleuze on Nietzsche; Graham vs. Ziporyn vs. Watson on Zhuangzi. This is the classical "critical source" work.
+- **Reception-historical** — *who has claimed this figure, for what, and at what cost?* Weaponization (Nazi Nietzsche; Mao-era 鲁迅), rival custodianships, partisan canonization presented as consensus, the figure's afterlife as a distinct object from the figure.
+
+For canonical figures with active reception battles, all three are load-bearing and Phase 3 should explicitly note which one a given critical source is addressing. For lesser-known figures, the interpretive pass is usually sufficient; note that in `sources/research-plan.md`.
+
 ## Delta discipline
 
 Not every pass is a full rebuild.

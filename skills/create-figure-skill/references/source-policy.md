@@ -15,6 +15,19 @@ If a source blends categories (e.g., a critical biography that quotes the figure
 
 The category is for provenance and storage, not ontology. One source may still inform many claims across many axes.
 
+### Collaborator testimony is primary-grade evidence *about the work*
+
+For figures who worked in distributed-authorship media — film, big-lab science, co-written drama, collaborative music — first-hand accounts by named collaborators are **load-bearing primary evidence about the work itself**, not distillations. Examples:
+
+- Kurosawa's cinematographer Miyagawa Kazuo testifying to the sun-through-leaves shots in *Rashomon*.
+- Pierre Curie's and Irène Joliot-Curie's laboratory accounts of radium isolation.
+- A co-writer's account of how a screenplay was actually assembled.
+- A primary editor's memoir about how a figure's posthumous manuscripts were assembled (this is also archive-integrity evidence per `four-axes.md` Axis 4 §6).
+
+Store these in `primary/cleaned/` when the collaborator is testifying to **what happened in the work**, and set `author:` in the frontmatter to the collaborator's name (not the figure's). Store in `critical/` only if the collaborator is critiquing the figure rather than testifying. Store in `distillations/` only if they are generalizing across the figure's career from an outside posture.
+
+This is a refinement of the authorial-voice rule above, not a contradiction: collaborators are first-hand *for the work they participated in*, even when not first-hand *for the figure's voice*. Downstream readers need to know who witnessed what, and collapsing collaborator accounts into `distillations/` hides that information.
+
 ## Priority of source quality
 
 Within each category, prefer in this order:
