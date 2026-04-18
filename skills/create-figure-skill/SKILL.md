@@ -22,7 +22,8 @@ Before starting, read `references/research-stance.md` and `references/route-plan
 
 Routes name the **pass** (`bootstrap` / `update` / `repair` / `extend`). Operations name the **verb**. A single pass usually involves several operations.
 
-- `ingest` — new evidence enters `sources/*/raw/`, gets normalized into `cleaned/`, manifest rebuilt.
+- `ingest` — new textual evidence enters `sources/*/raw/`, gets normalized into `cleaned/`, manifest rebuilt.
+- `observe` — structured re-encounter with a **non-textual primary** (film, recording, artwork, performance). Produces observation notes against a declared framework; lands in `sources/primary/cleaned/` with `source_type: observation`. The text-primary analogue of `ingest` for visual / auditory / performance figures.
 - `query` — the generated skill is used at run time; a mode answers a real prompt. This is the point of the compilation.
 - `file-back` — when a query produces a durable synthesis, archive it into `sources/distillations/cleaned/` so the skill accumulates instead of re-deriving.
 - `lint` — periodic self-audit of the knowledge layer: orphan claims, stale "no evidence" tags, quote drift, unfilled adversarial gaps. LLM judgment, not script.
@@ -143,7 +144,7 @@ Failures feed back into the modes, the router, and `research/boundaries.md`. Tha
 | Situation | File to consult |
 |---|---|
 | Phase 1 Route & Target Spec — choose `bootstrap` / `update` / `repair` / `extend` | `references/route-planning.md` |
-| Any pass — operation vocabulary (`ingest` / `query` / `file-back` / `lint`) | `references/maintenance-operations.md` |
+| Any pass — operation vocabulary (`ingest` / `observe` / `query` / `file-back` / `lint`) | `references/maintenance-operations.md` |
 | Any time — posture and anti-patterns | `references/research-stance.md` |
 | Phase 2 Prior Capture — snapshot structure | `references/prior-snapshot-template.md` |
 | Phase 3 Evidence Expansion — query planning, parallelism, adversarial pass | `references/deepresearch-playbook.md` |

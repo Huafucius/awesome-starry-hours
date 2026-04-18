@@ -35,6 +35,23 @@ Rules:
 
 File-back is how the skill accumulates — the Karpathy point. Without it, every complex query restarts from primary sources.
 
+### `observe`
+
+Structured re-encounter with a **non-textual primary** — watching a film, listening to a recording, examining a painting, attending a performance. The operation exists because `cleaned/` is a textual substrate and a filmmaker, composer, or dancer cannot be ingested as text without lossy projection.
+
+The artifact of `observe` is a markdown note of observations made against an explicit framework (usually the Axis 3 scope-note grid: unit size × channel). It is **primary-grade evidence about the work** but it is not the work.
+
+Rules:
+
+- `source_type: observation` in frontmatter.
+- `author:` is the observer — the agent's session id or the human's name, **not** the figure's name.
+- `source_url:` is a citation URI of the artifact observed (`film://rashomon-1950`, `recording://kurosawa-editing-interview-1980`). If the artifact has a canonical web location or archive entry, use that.
+- `note:` must state which channels the observations cover (image / movement / sound / performance / duration) and which channels the notes necessarily lose.
+- Store in `sources/primary/cleaned/`. A `raw/` counterpart should still exist — see `source-policy.md` on raw counterparts — typically a pointer file recording the artifact identifier and retrieval context, since the primary is not itself textual.
+- Re-observing the same artifact from a new angle produces a new file with a dated suffix; do not overwrite the previous observation.
+
+Plan `observe` early whenever the figure's primary output is non-textual and a text projection (screenplay, transcript, artist statement) would lose load-bearing channels. For filmmakers, painters, dancers, composers, and most performers, `observe` is usually in scope from Phase 3 onward.
+
 ### `lint`
 
 Periodic self-audit of the knowledge layer. Unlike `audit.py` (structural only), `lint` is LLM judgment on knowledge health.
@@ -54,10 +71,10 @@ A `lint` pass writes findings into `gap-report.md` (expanding it if needed) and 
 
 | Route | Typical operations |
 |---|---|
-| `bootstrap` | heavy `ingest` → distillation (file-back at the end for synthesis) |
-| `update` | `ingest` + targeted `lint` on the changed surface |
+| `bootstrap` | heavy `ingest` → distillation (file-back at the end for synthesis). `observe` replaces ingest for non-textual primaries. |
+| `update` | `ingest` or `observe` + targeted `lint` on the changed surface |
 | `repair` | `lint` to surface the problem + localized re-distillation |
-| `extend` | narrow `ingest` for the new capability + `lint` for regressions elsewhere |
+| `extend` | narrow `ingest` / `observe` for the new capability + `lint` for regressions elsewhere |
 
 ## Artifact contract for operations
 

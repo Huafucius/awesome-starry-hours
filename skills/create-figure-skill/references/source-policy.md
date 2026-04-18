@@ -79,7 +79,7 @@ Every file in `cleaned/` begins with this YAML block:
 ---
 title: "..."
 source_url: "https://..."
-source_type: essay | interview | speech | letter | biography | critique | profile | scholarly_paper | other
+source_type: essay | interview | speech | letter | biography | critique | profile | scholarly_paper | observation | distillation | other
 language: zh-CN | en | ja | ...
 reliability: high | medium | low | suspect
 retrieved_at: YYYY-MM-DD
@@ -110,6 +110,10 @@ If these fields are missing or blank, fix the cleaned file before rebuilding the
 - No edits. Ever.
 - Filename is a readable slug derived from the title.
 - `raw/` is the audit trail. If we re-download the same source later, both versions are kept with date suffixes — never overwritten.
+
+**Every `cleaned/` entry has a `raw/` counterpart of the same slug.** The rule is not optional. Even when the input arrives as already-clean markdown with valid frontmatter, copy it unchanged into `raw/` first; `cleaned/` is always derived from a `raw/` original. The `raw/` version preserves the original filename, source format, and retrieval context; without it, the `cleaned/` entry is an orphan and the audit trail is broken.
+
+For `observe` outputs (non-textual primaries), the `raw/` counterpart is a small pointer file naming the artifact observed (e.g., the film, recording, or artwork) and the retrieval context. The primary is not itself text; the pointer records that the observation was made and against what. See `maintenance-operations.md` on `observe`.
 
 ## What `summaries/` holds
 

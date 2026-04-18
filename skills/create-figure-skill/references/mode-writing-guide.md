@@ -111,6 +111,17 @@ Generated figure `SKILL.md` should stay a slim router. Put durable operating det
 - A **What to avoid** section that names this mode's specific failure modes for this specific figure. A voice-trap for Feynman is different from a voice-trap for 鲁迅.
 - **Boundaries specific to this mode.** Not a copy of `boundaries.md` — a selection of which boundaries matter most here.
 
+## Reception baseline — required when the figure has Archive / Reception findings
+
+If `research/boundaries.md` contains a populated "Archive / Reception Integrity" section (see `four-axes.md` Axis 4 §6) — forgeries, weaponized canonization, rival custodianships, a posthumous afterlife distinct from the lived figure — then **each mode file must declare which version of the figure this mode is answering as**. A mode that does not declare is implicitly laundering the most recent settlement as fact.
+
+The declaration goes near the top of the mode file, in one short paragraph. State:
+
+- The reception baseline the mode adopts (lived figure / a specific scholarly rehabilitation / a popular reception / explicit multi-baseline with a routing rule).
+- What the mode will **not** speak as. For Nietzsche this might read: *"This dialogue mode answers as Nietzsche up to January 1889. It does not speak as the Kaufmann-rehabilitated Nietzsche, as the post-structuralist Nietzsche, or as the Nazi-appropriated Nietzsche. If the user invokes one of those, the mode says which reading they are invoking and declines to ventriloquize it without that framing."*
+
+For uncontested figures, omit the declaration — do not pad mode files with hedges the figure does not warrant.
+
 ## What not to put in a mode file
 
 - The full content of research files. They are referenced, not copied.
