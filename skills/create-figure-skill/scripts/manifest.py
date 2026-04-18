@@ -4,8 +4,8 @@
 Usage:
     python3 manifest.py --skill-dir skills/<figure-slug>
 
-Scans sources/*/cleaned/*.md, reads YAML frontmatter, writes manifest.json.
-Pure frontmatter aggregation — no content interpretation.
+Scans sources/*/cleaned/*.md, reads frontmatter, writes manifest.json.
+Pure metadata aggregation — no content interpretation.
 """
 
 from __future__ import annotations
@@ -16,21 +16,35 @@ import sys
 from pathlib import Path
 
 
-def parse_frontmatter(text: str) -> dict | None:
-    """Minimal YAML frontmatter extractor. Returns None if no frontmatter block."""
+REQUIRED_FIELDS = [
+    "title",
+    "source_url",
+    "source_type",
+    "language",
+    "reliability",
+    "retrieved_at",
+    "author",
+]
+
+
+def parse_frontmatter(text: str) -> dict[str, str]:
+    """Minimal frontmatter extractor for the cleaned-source contract."""
     lines = text.splitlines()
     if not lines or lines[0].strip() != "---":
-        return None
+        raise ValueError("missing YAML frontmatter")
 
     meta: dict[str, str] = {}
     for line in lines[1:]:
         if line.strip() == "---":
+            missing = [field for field in REQUIRED_FIELDS if not meta.get(field)]
+            if missing:
+                raise ValueError(f"missing required frontmatter fields: {', '.join(missing)}")
             return meta
         if ":" not in line:
             continue
         key, _, value = line.partition(":")
         meta[key.strip()] = value.strip().strip('"').strip("'")
-    return None  # frontmatter never closed
+    raise ValueError("frontmatter never closed")
 
 
 def main() -> None:
@@ -49,17 +63,22 @@ def main() -> None:
         relative = cleaned_file.relative_to(sources_dir)
         category = cleaned_file.parts[-3]
         text = cleaned_file.read_text()
-        meta = parse_frontmatter(text) or {}
+        try:
+            meta = parse_frontmatter(text)
+        except ValueError as exc:
+            print(f"Error in {relative}: {exc}", file=sys.stderr)
+            sys.exit(1)
         entries.append(
             {
                 "path": str(relative),
                 "category": category,
-                "title": meta.get("title", ""),
-                "source_type": meta.get("source_type", ""),
-                "language": meta.get("language", ""),
-                "reliability": meta.get("reliability", ""),
-                "retrieved_at": meta.get("retrieved_at", ""),
-                "author": meta.get("author", ""),
+                "title": meta["title"],
+                "source_url": meta["source_url"],
+                "source_type": meta["source_type"],
+                "language": meta["language"],
+                "reliability": meta["reliability"],
+                "retrieved_at": meta["retrieved_at"],
+                "author": meta["author"],
             }
         )
 

@@ -10,9 +10,11 @@ Produces:
         meta.json            (slug, created_at)
         modes/               (five placeholder .md files)
         research/            (four placeholder .md files)
+            README.md        (stub index for the research layer)
         sources/
             manifest.json    (empty sources array)
             prior/
+                snapshot.md  (placeholder prior baseline)
             primary/{raw,cleaned,summaries}/
             critical/{raw,cleaned,summaries}/
             distillations/{raw,cleaned,summaries}/
@@ -25,6 +27,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -33,11 +36,12 @@ MODES = ["dialogue", "voice", "methodology", "critique", "advisory"]
 AXES = ["identity", "thinking", "expression", "boundaries"]
 SOURCE_CATEGORIES_STRUCTURED = ["primary", "critical", "distillations"]
 SOURCE_CATEGORIES_FLAT = ["prior"]
+SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 
 SKILL_MD_STUB = """---
 name: {slug}
-description: <TODO · fill in Phase 6 · Compose: write a pushy description with triggers AND anti-triggers. Triggers are example user phrasings that should activate this skill. Anti-triggers are phrasings that look similar but should NOT activate it.>
+description: <TODO · fill in Phase 6 · Interface Assembly: write a pushy description with triggers AND anti-triggers. Triggers are example user phrasings that should activate this skill. Anti-triggers are phrasings that look similar but should NOT activate it.>
 ---
 
 # <TODO · Figure Name>
@@ -48,26 +52,48 @@ description: <TODO · fill in Phase 6 · Compose: write a pushy description with
 
 <TODO · Routing logic. Identify the user's intent and point to the appropriate modes/*.md file. See create-figure-skill/references/mode-writing-guide.md for the spirit of mode routing. Keep this section under 30 lines.>
 
-<!-- This file is a stub created by scaffold.py. Complete it in Phase 6 · Compose. -->
+<!-- This file is a stub created by scaffold.py. Complete it in Phase 6 · Interface Assembly. -->
 """
 
 
 RESEARCH_STUB = """# {axis_title}
 
-<!-- Stub created by scaffold.py. Fill in Phase 5 · Distill. -->
+<!-- Stub created by scaffold.py. Fill in Phase 5 · Knowledge Distillation. -->
 <!-- See create-figure-skill/references/four-axes.md for the dimensions of this axis. -->
+"""
+
+
+RESEARCH_README_STUB = """# Research
+
+<!-- Stub created by scaffold.py. Update this in Phase 5 · Knowledge Distillation. -->
+<!-- Summarize what the current research layer contains and how the axes connect. -->
 """
 
 
 MODE_STUB = """# {mode_title} Mode
 
-<!-- Stub created by scaffold.py. Fill in Phase 6 · Compose. -->
+<!-- Stub created by scaffold.py. Fill in Phase 6 · Interface Assembly. -->
 <!-- See create-figure-skill/references/mode-writing-guide.md for the shape of a mode file. -->
+"""
+
+
+PRIOR_SNAPSHOT_STUB = """# Prior Snapshot
+
+<!-- Stub created by scaffold.py. Fill this in during Phase 2 · Prior Capture before external search. -->
 """
 
 
 def create_skeleton(slug: str, output_dir: Path) -> Path:
     skill_dir = output_dir / slug
+    if not SLUG_RE.fullmatch(slug):
+        print(
+            "Error: slug must match ^[a-z0-9][a-z0-9-]*$.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    if output_dir.resolve() not in skill_dir.resolve().parents:
+        print("Error: slug escapes the output directory.", file=sys.stderr)
+        sys.exit(1)
     if skill_dir.exists():
         print(f"Error: {skill_dir} already exists. Refusing to overwrite.", file=sys.stderr)
         sys.exit(1)
@@ -85,6 +111,7 @@ def create_skeleton(slug: str, output_dir: Path) -> Path:
     research_dir.mkdir()
     for axis in AXES:
         (research_dir / f"{axis}.md").write_text(RESEARCH_STUB.format(axis_title=axis.capitalize()))
+    (research_dir / "README.md").write_text(RESEARCH_README_STUB)
 
     # sources/
     sources_dir = skill_dir / "sources"
@@ -97,6 +124,8 @@ def create_skeleton(slug: str, output_dir: Path) -> Path:
 
     for category in SOURCE_CATEGORIES_FLAT:
         (sources_dir / category).mkdir()
+
+    (sources_dir / "prior" / "snapshot.md").write_text(PRIOR_SNAPSHOT_STUB)
 
     (sources_dir / "manifest.json").write_text(
         json.dumps({"count": 0, "sources": []}, indent=2) + "\n"

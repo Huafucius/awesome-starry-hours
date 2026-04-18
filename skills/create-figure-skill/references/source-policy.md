@@ -1,17 +1,19 @@
 # Source Policy
 
-Rules for collecting, classifying, and annotating sources. Consulted in Phase 3 (Forage) and Phase 4 (Cull).
+Rules for collecting, classifying, and annotating sources. Consult this during Phase 3 (Evidence Expansion) and Phase 4 (Corpus Preparation).
 
 ## The four categories
 
-Every file that enters `sources/` belongs to exactly one category:
+Every file that enters `sources/` belongs to exactly one storage category:
 
-- **`prior/`** — the model's own prior snapshot. Exactly one file: `snapshot.md`, written in Phase 2 before any web access.
+- **`prior/`** — the model's own prior baseline. Keep `snapshot.md` as the original pre-search snapshot. If later passes need to record how evidence corrected it, add dated notes next to it instead of overwriting it.
 - **`primary/`** — material authored by the figure themselves. Books, essays, interviews, speeches, letters, notebooks, diaries. The figure's voice, uncurated.
 - **`critical/`** — material authored by people challenging the figure. Rivals, adversaries, disillusioned colleagues, reassessing scholars, documented critiques. This category is the anti-hagiography vaccine.
 - **`distillations/`** — material by third parties who have already compressed this figure. Profile essays, academic analyses, existing figure-skills, "best of" compilations, introductions to anthologies.
 
 If a source blends categories (e.g., a critical biography that quotes the figure heavily), classify by **authorial voice**, not by the balance of content. A critical biography goes in `critical/` even if half its pages are the figure's own words.
+
+The category is for provenance and storage, not ontology. One source may still inform many claims across many axes.
 
 ## Priority of source quality
 
@@ -48,7 +50,7 @@ When in doubt, label lower. `research/` citations disclose reliability: "per [so
 
 ## Format handling
 
-The agent will encounter many formats during Forage. `raw/` accepts any format; `cleaned/` is always markdown.
+The agent will encounter many formats during Evidence Expansion. `raw/` accepts any format; `cleaned/` is always markdown.
 
 - **HTML** → strip navigation, ads, pagination, comment sections. Preserve the article text. LLM does this; no script needed.
 - **Plain text** → add frontmatter, no other change.
@@ -75,6 +77,20 @@ note: "..."            # optional, for provenance caveats or translation notes
 
 The body of the file is the cleaned text. Do not summarize. Do not paraphrase. Do not excerpt to "the good parts". `cleaned/` is a full-fidelity substrate — future agents may grep it for exact phrases, pull direct quotes, or re-read with new questions. If the original is long, keep it long.
 
+### Manifest contract
+
+`scripts/manifest.py` treats the following frontmatter fields as required for every cleaned source:
+
+- `title`
+- `source_url`
+- `source_type`
+- `language`
+- `reliability`
+- `retrieved_at`
+- `author`
+
+If these fields are missing or blank, fix the cleaned file before rebuilding the manifest.
+
 ## What `raw/` holds
 
 - Exact downloaded files: `.html`, `.pdf`, `.txt`, `.vtt`, etc.
@@ -84,12 +100,16 @@ The body of the file is the cleaned text. Do not summarize. Do not paraphrase. D
 
 ## What `summaries/` holds
 
-Produced in Phase 5.1 (Summary Sweep). One summary per cleaned source, roughly 200 words.
+Produced during Knowledge Distillation when summaries are actually useful. One summary per cleaned source is common in `bootstrap`, but incremental passes may summarize only changed or newly important files.
 
 - Filename mirrors the cleaned filename.
 - Same frontmatter as `cleaned/` plus `summary_of: <path-to-cleaned-file>`.
 - Content: what the source actually contains; which axis dimensions it touches; notable or adversarial points.
 - Do not editorialize. Do not interpret beyond what the source itself does.
+
+## Incremental normalization
+
+For `update`, `repair`, and `extend`, normalize only newly added or changed raw files unless the source policy itself changed. Do not rebuild the whole cleaned corpus just because the workflow re-entered Phase 4.
 
 ## What gets dropped and why
 

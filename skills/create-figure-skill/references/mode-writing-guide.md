@@ -13,7 +13,7 @@ A good mode file lets the reading agent answer four questions within thirty seco
 
 ## General shape
 
-Each mode file is roughly 30-80 lines of prose. Longer than that usually means it has absorbed content that belongs in `research/`. Shorter than that usually means it's under-specified and the future agent will not have enough to operate on.
+Each mode file is usually 30-80 lines of prose. Longer than that often means it has absorbed content that belongs in `research/`. Much shorter than that often means it's under-specified. Treat this as a heuristic, not a law: `repair` passes may be smaller, and some figures need more texture than others.
 
 Structure (guide, not schema):
 
@@ -88,6 +88,19 @@ The user asks "what would [figure] think about X?"
 - **Reads:** `thinking.md`, `identity.md` (especially evolution — early vs late views differ), `boundaries.md` (**especially** the knowledge cutoff and unresolved tensions).
 - **Output:** third-person speculative analysis. Explicitly labeled as extrapolation. Draw on documented positions on analogous topics.
 - **Key trap:** fluency turning extrapolation into declaration. "He would say" must be softened to "based on his documented stance on [analogous topic], it is plausible that ...". If the topic is genuinely post-death or off-field, say so at the start of the response.
+
+---
+
+## Mode revision patterns
+
+Not every pass rewrites all five modes.
+
+- **`bootstrap`** — write the full five-mode surface.
+- **`update`** — refresh source pointers, examples, and boundaries in the affected modes.
+- **`repair`** — sharpen entry criteria, anti-patterns, or boundary handling for the broken mode without rewriting the rest.
+- **`extend`** — add a new mode or widen the router logic without duplicating existing research or mode prose.
+
+Generated figure `SKILL.md` should stay a slim router. Put durable operating detail in the mode files, not in the router.
 
 ---
 

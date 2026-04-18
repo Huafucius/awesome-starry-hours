@@ -1,8 +1,8 @@
 # Four Axes
 
-The four dimensions along which a figure is researched. Each axis produces one file in `research/`. The axes are orthogonal as organizing principles — a single piece of evidence may touch several, but each `research/` file is written separately with its own focus.
+The four core dimensions along which a figure is researched. Each axis usually produces one file in `research/`. The axes are orthogonal as organizing principles — a single piece of evidence may touch several, but each `research/` file is written separately with its own focus.
 
-Read this during Phase 5 · Distill. The dimensions listed under each axis are a **researcher's checklist**, not a mandatory schema. Leave dimensions empty — with explicit "no evidence found" and the queries tried — when evidence does not exist.
+Read this during Phase 5 · Knowledge Distillation. The dimensions listed under each axis are a **researcher's checklist**, not a mandatory schema. `bootstrap` usually touches all four axes; incremental passes may refresh only the affected sections. Leave dimensions empty — with explicit "no evidence found" and the queries tried — when evidence does not exist.
 
 ---
 
@@ -51,7 +51,7 @@ A figure skill whose `thinking.md` reads as slogans instead of these dimensions 
 
 ## Axis 3 · Voice → `research/expression.md`
 
-How they speak and write. Five layers of granularity. Layers 1-3 are sub-attentional and hardest to fake; layers 4-5 are meaning-bearing and easier to imitate but essential for identity. All five layers get a section.
+How they speak and write. Five layers of granularity. Layers 1-3 are sub-attentional and hardest to fake; layers 4-5 are meaning-bearing and easier to imitate but essential for identity. `bootstrap` usually covers all five layers; incremental passes refresh only the layers touched by the new evidence or by the interface change.
 
 ### 字 · Character / grapheme layer
 
@@ -87,7 +87,7 @@ How they speak and write. Five layers of granularity. Layers 1-3 are sub-attenti
 - Intertextual reflex — what they quote from involuntarily (古籍 for 鲁迅; Russell and Calvino for 王小波).
 - Recurring obsessions — the thematic fingerprint across many works.
 
-For each layer, record 2-4 concrete observations with source citations. If the figure produced in multiple modes (speech vs essay vs letter), note divergences — many figures have a distinctly different voice in private correspondence than in published work.
+For each layer you touch, record concrete observations with source citations. If the figure produced in multiple modes (speech vs essay vs letter), note divergences — many figures have a distinctly different voice in private correspondence than in published work.
 
 ---
 
@@ -95,7 +95,7 @@ For each layer, record 2-4 concrete observations with source citations. If the f
 
 Where the skill must not claim knowledge. The anti-hagiography file. This is the file that every mode consults before returning a response.
 
-Five mandatory sections:
+Five default sections:
 
 ### 1. Named critics
 
@@ -123,6 +123,17 @@ Questions this figure never answered cleanly. Internal contradictions that staye
 ### 5. Knowledge cutoff
 
 The figure's death date (if deceased). Any post-death topic is strict extrapolation. This is the hard rule for `advisory` mode: phrases like "he would say X about AI" must be softened to "based on his documented stance on Y, it is plausible that..." The cutoff is also relevant for `dialogue` mode — the figure cannot know about events after their death.
+
+---
+
+## Route guidance
+
+- `bootstrap` usually writes all four axis files in full.
+- `update` usually refreshes the touched sections and reconciles the rest only if new evidence forces it.
+- `repair` may revise just one subsection plus `boundaries.md`.
+- `extend` may add an appendix or route-specific section if the new capability needs it.
+
+The four axes are the default core, not a prison. If a figure truly demands an extra appendix or a route-specific research note, add it without pretending one of the four axes already covered it.
 
 ---
 

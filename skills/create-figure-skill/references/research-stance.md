@@ -2,7 +2,7 @@
 
 This file is the posture that makes a figure skill non-trivial. Without it, the skill will drift toward a whitewash.
 
-Read it before Phase 1. Re-read it whenever Phase 3 or Phase 5 starts feeling formulaic.
+Read it before any pass that changes evidence, claims, or modes. Re-read it whenever Evidence Expansion or Knowledge Distillation starts feeling formulaic.
 
 ## The core problem
 
@@ -18,7 +18,7 @@ Robert Caro, on researching Lyndon Johnson:
 
 > Turn every page. Never assume anything. Turn every goddamned page.
 
-Agents have an advantage here: we can turn pages in parallel. Don't stop at the first three results. If the figure has forty years of output, expect to surface it across categories, languages, and decades. The numeric targets in `deepresearch-playbook.md` exist so that "enough" is not a feeling.
+Agents have an advantage here: we can turn pages in parallel. Don't stop at the first three results. If the figure has forty years of output, expect to surface it across categories, languages, and decades. Use the heuristics in `deepresearch-playbook.md` to keep "enough" from becoming a vibe, but do not mistake heuristics for ritual.
 
 ### 2. Show the seams (Malcolm)
 
@@ -37,7 +37,18 @@ An agent researching a figure has four source types, each with a built-in bias:
 - **Critical** (adversaries, reassessments, rivals) — the correction force. Without it, the skill is hagiography. Over-weight this deliberately when primary sources feel monotonically flattering — the imbalance you feel is probably real.
 - **Distillations** (what other thinkers have already compressed about this figure) — useful acceleration, dangerous amplification. If every distillation makes the same point, ask why. Sometimes a single early profile propagates unchecked for decades.
 
-Never collect from only one category. Phase 3's three-lane forage exists to force balance. See `source-policy.md` for category rules.
+For `bootstrap`, never collect from only one category. For `update`, `repair`, and `extend`, start narrow if you must — but before you let a strong new claim into the skill, ask whether you have given it enough cross-category pressure. See `source-policy.md` for category rules.
+
+## Delta discipline
+
+Not every pass is a full rebuild.
+
+- In `bootstrap`, search broadly and establish the first durable corpus.
+- In `update`, search for the new evidence and then widen only when the delta exposes a deeper hole.
+- In `repair`, gather only what is needed to fix the broken claim, weak boundary, or failed mode.
+- In `extend`, gather what the new capability needs and no more.
+
+The discipline does not change: the narrower the pass, the more explicit you must be about what you did **not** re-evaluate.
 
 ### 4. Principle + Trace + Limits
 
@@ -64,13 +75,13 @@ If you cannot produce the Trace and Limits for a given principle, the principle 
 
 ## The smell test before moving on
 
-Before considering `research/` done, answer:
+Before considering the pass done, answer the questions that fit the route you actually ran:
 
-- Can I point to a moment where the figure was publicly wrong? Is it in `boundaries.md`?
-- Does `thinking.md` name at least one critic for each major principle?
-- Does `expression.md` cover 字/词/句/段/章文 as separate layers, or did I collapse them into one blob?
-- Did I search in the figure's native language if they wrote in one?
-- Is every "no evidence found" paired with the specific queries I actually tried?
-- Does `identity.md` include relational patterns and key stress events, not just birth and death?
+- If this was `bootstrap`, can I point to a moment where the figure was publicly wrong? Is it in `boundaries.md`?
+- If this pass changed `thinking.md`, does each major new or revised principle have critical pressure behind it?
+- If this pass changed `expression.md`, did I refresh the layers that were actually touched instead of collapsing them into one blob?
+- Did I search in the figure's native language if they wrote in one and the route required new evidence?
+- Is every new "no evidence found" paired with the specific queries I actually tried?
+- If this pass changed `identity.md`, did I add the relevant relational patterns, stress events, or evolution instead of only surface biography?
 
-If any answer is no, research is not done. Go back.
+If a relevant answer is no, the pass is not done. Go back.
